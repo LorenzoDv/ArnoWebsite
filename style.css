@@ -1,0 +1,424 @@
+@font-face {
+    font-family: "Rockless";
+    src: url('Rockless.otf');
+   
+    font-weight: normal;
+    font-style: normal;
+  }
+/* bleu foncé : #2F3245 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: rgb(250,247,235);
+    background: linear-gradient(176deg, rgba(250,247,235,1) 27%, rgba(235,246,247,1) 66%);
+}
+header{
+
+    background-color: #2F3245;
+}
+h1{
+    margin-top: 0;
+    text-align: center;
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-size: 56px;
+    font-family: 'Poppins', sans-serif;
+color: lightblue;
+}
+h2{
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Rockless', cursive;
+    font-weight: 100;
+    color: white;
+    font-size: 45px;
+    position: relative;
+    top: -45px;
+    letter-spacing: 3px;
+}
+nav{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    padding: 0; 
+    list-style: none;
+    text-decoration: none;
+}
+nav ul li{
+width: 25%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 21px;
+    position: relative;
+}
+#acceuilgradient{
+   color: white;
+}
+#Portfoliogradient{
+    background: rgb(255,255,255);
+    background: linear-gradient(100deg, rgba(255,255,255,1) 0%, rgba(173,216,230,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+#aproposgradient{
+    background: rgb(173,216,230);
+    background: linear-gradient(100deg, rgba(173,216,230,1) 0%, rgba(255,255,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+#aproposcontact{
+    color: white;
+}
+
+/* EFFET TEXT NAV */
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+
+
+}
+
+nav ul li a:hover::before {
+    transform-origin: 0 0;
+    transform: scaleX(1);
+
+}
+
+.arnopic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arno{
+    position: relative;
+    top: -103px;
+    border-radius: 50%;
+    border: 5px solid white;
+    
+}
+
+
+.trailer{
+    width: 100%;
+    position: relative;
+}
+#idvideo{
+    position: relative !important;
+}
+.trailer figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.trailer video{
+    width: 65%;
+}
+.aptitude{
+    display: flex;
+    width: 54%;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+.apt-center{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.apt-center i {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: gray;
+}
+.apt-center h6 {
+    font-size: 20px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+.apt-center p {
+    margin: 5px;
+    color: gray;
+    position: relative;
+}
+
+.hide{
+    visibility: hidden;
+}
+.portfolio video{
+    width: 100%;
+}
+.portfolio{
+    width: 100%;
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*background-color: #2F3245;*/
+    height: 1214px;
+    position: relative;
+
+}
+.portfolio figure{
+    width: 32%;
+    margin: 5px;
+    position: relative;
+}
+
+
+.para .hrSousTitre{
+    position: relative;
+    top: -75px;
+    z-index: -1;
+    transition: 0.3s linear;
+}
+
+.para:hover .hrSousTitre{
+  
+    position: relative;
+    top: -20px;
+    z-index: 1;
+    transition: 0.3s linear;
+}
+
+.apropos{
+    /*background-color: #EBF6F7;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+.apropos img{
+    border-radius: 15px;
+    width: 500px;
+}
+.detail h3{
+    font-size: 41px;
+    color: #EF815B;
+    text-transform: uppercase;
+    border-bottom: 2px solid #EF815B;
+    width: 218px;
+}
+.detail p{
+    width: 70%;
+    color: #463A63;
+    font-size: 20px;
+}
+.detail{
+    width: 50%;
+}
+footer{
+    background-color: #2F3245;
+    text-align: center;
+    height: 250px;
+}
+footer i {
+    color: white;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+
+}
+
+#topAptitude{
+    width: 0;
+    height: 3px;
+    border: none;
+    background-color: black;
+    margin-top: 64px;
+}
+#botAptitude{
+    width: 0;
+    height: 3px;
+    border: none;
+    background-color: black;
+    margin-top: 64px;
+}
+
+.hr{
+    animation: hr 0.5s linear both;
+}
+.hr1{
+    animation: hr1 0.5s linear both;
+}
+
+@keyframes hr {
+    from{
+        width: 0;
+    }
+    to{
+        width: 73%;
+    }
+}
+@keyframes hr1 {
+    from{
+        width: 0;
+    }
+    to{
+        width: 58%;
+    }
+}
+#acceuil:hover{
+
+}
+
+video{
+    /*border: 12px solid white;*/
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+figure img{
+    position: absolute;
+    width: 100%;
+    height: 344px;
+    top: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    left: 0;
+    z-index: 5;
+}
+.test{
+    z-index: 99 !important;
+}
+.desc:hover{
+    opacity: 1;
+   background-color:  rgba(47, 50, 69, 0.7);
+    cursor: url("/img/play-solid.svg"), auto;
+}
+.desc{
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    height: 344px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 6;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.desc p {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    opacity: 1 !important;
+}
+.portfolio video:hover{
+
+    transition: 0.3s;
+}
+#arno{
+    margin-top: 24px;
+    width: 100%;
+    text-align: center;
+    padding-top: 0px !important;
+    margin-bottom: 55px;
+    text-transform: uppercase;
+    font-size: 49px;
+    color: #EF815B !important;
+    -webkit-text-fill-color: #EF815B;
+    animation: arno 0.5s linear both;
+    animation-delay: 1s;
+    position: relative;
+    height: 81px;
+}
+
+@keyframes arno {
+    0%{
+
+        top: -112px;
+        z-index: -1;
+    }
+    30%{
+        z-index: -1;
+    }
+    50%{
+
+        top: 0;
+        z-index: 1;
+    }
+    100%{
+        font-size: 71px;
+    }
+
+}
+.nav-flex{
+  flex-direction: column;
+    width: 50%;
+}
+.soustitre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 19px;
+    color: #2F3245;
+    margin-top: 9px;
+}
+.hrSousTitre{
+    height: 3px;
+    border: none;
+    background-color: #2F3245;
+    width: 14px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.linear{
+    position: relative;
+}
+.linear::after{
+    content: "";
+    width: 5px;
+    height: 10px;
+    position: absolute;
+    left: 18.6%;
+    bottom: 7px;
+    transform: scaleX(0);
+    transform-origin: 100% 0;
+    transition: transform 0.4s;
+}
+.linear:hover::after {
+    transform-origin: 100% 0;
+    transform: scaleX(-237);
+}
+
