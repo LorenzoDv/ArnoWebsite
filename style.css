@@ -319,7 +319,7 @@ figure img{
 .desc:hover{
     opacity: 1;
    background-color:  rgba(47, 50, 69, 0.7);
-    cursor: url("/img/play-solid.svg"), auto;
+    cursor: url("img/play-solid.svg"), auto;
 }
 .desc{
     display: flex;
