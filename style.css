@@ -145,6 +145,7 @@ nav ul li a:hover::before {
 }
 .trailer video{
     width: 65%;
+    margin: 0 auto;
 }
 .aptitude{
     display: flex;
@@ -198,7 +199,16 @@ nav ul li a:hover::before {
     margin: 5px;
     position: relative;
 }
+.portfolio video{
 
+}
+.status{
+    cursor: url("img/pause-solid.svg"), auto !important;
+}
+
+.play{
+    cursor: url("img/play-solid.svg"), auto;
+}
 
 .para .hrSousTitre{
     position: relative;
@@ -332,7 +342,7 @@ figure img{
     width: 100%;
     z-index: 6;
     transition: all 0.3s;
-    cursor: pointer;
+
 }
 .desc p {
     margin: 0;
@@ -377,7 +387,7 @@ figure img{
         z-index: 1;
     }
     100%{
-        font-size: 71px;
+        font-size: 50px;
     }
 
 }
@@ -405,13 +415,14 @@ figure img{
 }
 .linear{
     position: relative;
+    display: flex;
 }
 .port{
-    margin: 38px !important;
+    margin: 65px !important;
     padding: 0;
     text-align: center;
     text-transform: uppercase;
-    font-size: 71px;
+    font-size: 50px;
     font-family: 'Poppins', sans-serif;
     color: #EF815B;
 }

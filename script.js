@@ -5,6 +5,8 @@
 $( document ).ready(function() {
     $("video").prop("volume", 0.2);
 
+
+
     $(window).scroll(function (event) {
         var scroll = $(window).scrollTop();
         console.log( scroll );
@@ -29,7 +31,19 @@ $( document ).ready(function() {
             let myVideo = $(this).find("video");
             myImg.hide()
             myDesc.hide()
-            myVideo.get(0).play()
+
+            if (!myVideo.hasClass('play')){
+                myVideo.addClass('play')
+                myVideo.removeClass('pause')
+                myVideo.get(0).play()
+            }
+            else if (myVideo.hasClass('pause')){
+                myVideo.addClass('play')
+                myVideo.removeClass('pause')
+
+            }
+            myVideo.toggleClass('status')
+
         })
         $( this ).mouseleave(function() {
             let myImg = $(this).find("img");
